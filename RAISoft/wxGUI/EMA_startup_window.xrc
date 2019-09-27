@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource>
+  <object class="wxFrame" name="HEAD">
+    <object class="wxMenuBar" name="MEN_BAR"/>
+    <object class="wxToolBar">
+      <object class="wxButton" name="BTN_OUTPUT">
+        <label>Select output file</label>
+        <style>wxNO_BORDER</style>
+        <bg>#80FF80</bg>
+      </object>
+      <object class="wxButton" name="BTN_RUN">
+        <label>Run script</label>
+        <style>wxBU_EXACTFIT|wxNO_BORDER</style>
+        <bg>#FF8080</bg>
+        <enabled>1</enabled>
+      </object>
+    </object>
+    <object class="wxBoxSizer">
+      <object class="sizeritem">
+        <object class="wxStaticLine">
+          <style>wxLI_HORIZONTAL</style>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxPanel">
+          <object class="wxBoxSizer">
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+              <object class="wxBoxSizer">
+                <object class="sizeritem">
+                  <object class="wxStaticText">
+                    <label>Data output filename:</label>
+                    <style>wxALIGN_LEFT</style>
+                  </object>
+                  <flag>wxALIGN_LEFT</flag>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxTextCtrl" name="TXT_FILENAME">
+                    <value>&lt;choose the filename with button&gt;</value>
+                    <style>wxTE_READONLY</style>
+                  </object>
+                  <flag>wxALL|wxEXPAND|wxGROW|wxALIGN_LEFT|wxADJUST_MINSIZE</flag>
+                  <minsize>350,20</minsize>
+                </object>
+                <orient>wxHORIZONTAL</orient>
+              </object>
+            </object>
+            <object class="sizeritem">
+              <object class="wxBoxSizer">
+                <orient>wxHORIZONTAL</orient>
+                <object class="sizeritem">
+                  <object class="wxStaticText">
+                    <label>Working directory:</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxTextCtrl" name="TXT_DIRECTORY">
+                    <value>&lt;choose the filename with button&gt;</value>
+                    <style>wxTE_READONLY</style>
+                  </object>
+                  <flag>wxALL|wxEXPAND|wxGROW|wxALIGN_LEFT|wxADJUST_MINSIZE</flag>
+                  <minsize>350,20</minsize>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticLine"/>
+      </object>
+      <object class="sizeritem">
+        <object class="wxPanel" name="PNL_SCRIPT_SELECT">
+          <object class="wxBoxSizer">
+            <orient>wxHORIZONTAL</orient>
+            <object class="sizeritem">
+              <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                  <object class="wxStaticText" name="TXT_CATEGORIES">
+                    <label>Categories of scripts</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxListCtrl" name="LST_CATEGORIES">
+                    <size>250,100</size>
+                    <style>wxLC_LIST|wxLC_SINGLE_SEL|wxLC_VRULES</style>
+                  </object>
+                </object>
+              </object>
+            </object>
+            <object class="sizeritem">
+              <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                  <object class="wxStaticText" name="TXT_SCRIPTS">
+                    <label>Select testing script</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxListCtrl" name="LST_SCRIPTS">
+                    <size>250,100</size>
+                    <style>wxLC_LIST|wxLC_SINGLE_SEL|wxLC_VRULES</style>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxPanel" name="PNL_PARAM_EDIT">
+          <style/>
+        </object>
+        <flag>wxTOP|wxALL|wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxTextCtrl" name="TXT_DESRIPTION">
+          <size>500,200</size>
+          <style>wxTE_AUTO_SCROLL|wxTE_MULTILINE|wxTE_READONLY|wxTE_WORDWRAP</style>
+        </object>
+        <flag>wxALL|wxEXPAND|wxGROW</flag>
+      </object>
+      <orient>wxVERTICAL</orient>
+    </object>
+    <size>500,500</size>
+    <title>EMA - Electrical measurement apparate control</title>
+    <centered>1</centered>
+  </object>
+</resource>

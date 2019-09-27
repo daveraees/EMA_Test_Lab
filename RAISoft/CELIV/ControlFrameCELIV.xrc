@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxFrame" name="BANANA">
+    
+    <object class="wxMenuBar" name="MEN_BAR"/>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxPanel">
+          <object class="wxFlexGridSizer">
+            <object class="sizeritem">
+              <object class="wxStaticText">
+                <label>Data filename:</label>
+              </object>
+            </object>
+            <object class="sizeritem">
+              <object class="wxTextCtrl" name="TXT_FILENAME"/>
+              <flag>wxEXPAND|wxGROW</flag>
+            </object>
+            <object class="sizeritem">
+              <object class="wxStaticText">
+                <label>Data directory:</label>
+              </object>
+            </object>
+            <object class="sizeritem">
+              <object class="wxTextCtrl" name="TXT_DIRECTORY"/>
+              <flag>wxEXPAND</flag>
+            </object>
+            <cols>2</cols>
+            <rows>2</rows>
+            <hgap>10</hgap>
+            <growablecols>1</growablecols>
+            <growablerows>1,2</growablerows>
+          </object>
+        </object>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxPanel">
+          <object class="wxBoxSizer">
+            <object class="sizeritem">
+              <object class="wxButton" name="BTN_OUTPUT">
+                <label>OUTPUT</label>
+                <fg>#FF0000</fg>
+                <font>
+                  <size>10</size>
+                  <style>normal</style>
+                  <weight>bold</weight>
+                  <underlined>0</underlined>
+                  <family>swiss</family>
+                  <face>Tahoma</face>
+                  <encoding>WINDOWS-1250</encoding>
+                </font>
+              </object>
+              <flag>wxEXPAND|wxGROW</flag>
+            </object>
+            <object class="spacer">
+              <size>10</size>
+            </object>
+            <object class="sizeritem">
+              <object class="wxButton" name="BTN_RECORD">
+                <label>RECORD Scope</label>
+                <fg>#FF0000</fg>
+                <font>
+                  <size>8</size>
+                  <style>normal</style>
+                  <weight>bold</weight>
+                  <underlined>0</underlined>
+                  <family>swiss</family>
+                  <face>Tahoma</face>
+                  <encoding>WINDOWS-1250</encoding>
+                </font>
+              </object>
+            </object>
+            <object class="spacer">
+              <size>10</size>
+            </object>
+            <orient>wxHORIZONTAL</orient>
+            <object class="sizeritem">
+              <object class="wxStaticText">
+                <label>amount:</label>
+              </object>
+            </object>
+            <object class="sizeritem">
+              <object class="wxChoice" name="SCOPE_POINTS">
+                <content>
+                  <item>100</item>
+                  <item>1000</item>
+                  <item>10000</item>
+                  <item>MAX</item>
+                </content>
+                <selection>1</selection>
+              </object>
+            </object>
+          </object>
+        </object>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxPanel" name="PNL_PARAM_EDIT"/>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxPanel" name="TRIGGER">
+          <object class="wxBoxSizer">
+            <orient>wxHORIZONTAL</orient>
+            <object class="sizeritem">
+              <object class="wxButton" name="BTN_SINGLE">
+                <label>SINGLE shot</label>
+                <style>wxDOUBLE_BORDER</style>
+              </object>
+            </object>
+            <object class="spacer">
+              <size>10</size>
+              <option>0</option>
+            </object>
+            <object class="sizeritem">
+              <object class="wxToggleButton" name="BTN_REPEAT">
+                <label>... CONTINUOUS ...</label>
+              </object>
+              <flag>wxEXPAND|wxGROW</flag>
+            </object>
+          </object>
+        </object>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxTextCtrl" name="TXT_DESCRIPTION">
+          <style>wxTE_MULTILINE|wxHSCROLL|wxTE_WORDWRAP</style>
+        </object>
+        <flag>wxEXPAND|wxGROW</flag>
+        <border>3</border>
+        <minsize>200,200</minsize>
+      </object>
+    </object>
+    <title>CELIV experiment control GUI</title>
+    <style>wxDEFAULT_FRAME_STYLE|wxRESIZE_BORDER</style>
+  </object>
+</resource>
