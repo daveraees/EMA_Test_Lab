@@ -13,11 +13,15 @@ Features:
 * Field-Effect Transistor Characterization
 
 
-It is written in Python 2.5,
+It is tested with Python 2.5,
 
-Libraries dependecies:
-
+Requirements:
+---------
 * python 2.5
-* numpy
-* pyVISA
-* matplotlib
+* setuptools=0.6c8
+* numpy=1.4.1
+* scipy=0.7.2
+* matplotlib=0.99.1
+* wx=2.8-msw-unicode
+* pyVISA=1.3
+* pyserial=2.5
