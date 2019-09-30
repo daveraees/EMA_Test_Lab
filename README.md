@@ -13,11 +13,10 @@ Features:
 * Field-Effect Transistor Characterization
 
 
-It is tested with Python 2.5,
+It is tested with Python 2.5
 
 Requirements:
 ---------
-* python 2.5
 * setuptools=0.6c8
 * numpy=1.4.1
 * scipy=0.7.2
