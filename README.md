@@ -31,3 +31,4 @@ Screenshots
 ![](file:///D:/David/Dokumenty/labjournal/Tool/Software/GitHub/EMA_Test_Lab/pasted_image.png)
 
 ![](file://screenshots/pasted_image.png)
+![Making simulated measurement](/screenshots/path/to/img.jpg?raw=true "Making simulated measurement")
