@@ -25,7 +25,7 @@ Requirements:
 * pyVISA=1.3
 * pyserial=2.5
 
-Screenshots
+Screenshots:
 -----------
 
 ![Making simulated measurement](/screenshots/JobWaiting-screenshot.png?raw=true "Making simulated measurement")
